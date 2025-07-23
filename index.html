@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhiyan Academy TRB Tutor App - Ace Your PG TRB Exams</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tn-blue': '#1e40af',
+                        'tn-orange': '#ea580c',
+                        'tn-green': '#16a34a',
+                    },
+                      fontFamily: {
+                    sans: ['Poppins', 'sans-serif'],
+                }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+ <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-tn-blue">🎓 TRB Tutor</h1>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <a href="#hero" class="text-gray-700 hover:text-tn-blue px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-tn-blue px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#courses" class="text-gray-700 hover:text-tn-blue px-3 py-2 rounded-md text-sm font-medium">Courses</a>
+                    <a href="#contact" class="text-gray-700 hover:text-tn-blue px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+
+                    <!-- Download App Button -->
+                    <button class="bg-tn-green text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+                        📲 Download App
+                    </button>
+
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/918148153414" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+                        💬 WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-tn-blue">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#hero" class="block text-gray-700 hover:text-tn-blue px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a href="#about" class="block text-gray-700 hover:text-tn-blue px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a href="#courses" class="block text-gray-700 hover:text-tn-blue px-3 py-2 rounded-md text-base font-medium">Courses</a>
+            <a href="#contact" class="block text-gray-700 hover:text-tn-blue px-3 py-2 rounded-md text-base font-medium">Contact</a>
+
+            <!-- Download App Button -->
+            <button class="w-full text-left bg-tn-green text-white px-3 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+                📲 Download App
+            </button>
+
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/918148153414" target="_blank" class="block text-left bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+                💬 WhatsApp
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-br from-blue-50 to-orange-50 pt-20 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <br>
+<br>
+<br>
+
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                        🎓 Ace Your PG TRB Exams – <span class="text-tn-blue">One MCQ tests at a Time!</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 mb-8">
+                        Smart App for Daily, Weekly & Monthly Unit Tests – Powered by Expert TRB Tutors in Botany, Chemistry, Zoology & More!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button class="bg-tn-green text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 transition duration-300 shadow-lg">
+                            📲 Download App
+                        </button>
+                        <button class="bg-tn-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">
+                            👨‍🏫 For Institutions – Request Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-auto">
+                        <div class="text-6xl mb-4">📱</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">TRB Tutor App</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between bg-gray-50 p-3 rounded-lg">
+                                <span class="text-sm font-medium">📚 Botany</span>
+                                <span class="text-green-600 text-sm">✓ Available</span>
+                            </div>
+                            <div class="flex items-center justify-between bg-gray-50 p-3 rounded-lg">
+                                <span class="text-sm font-medium">🧪 Chemistry</span>
+                                <span class="text-green-600 text-sm">✓ Available</span>
+                            </div>
+                            <div class="flex items-center justify-between bg-gray-50 p-3 rounded-lg">
+                                <span class="text-sm font-medium">🔬 Zoology</span>
+                                <span class="text-green-600 text-sm">✓ Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">🧠 What is TRB Tutor App?</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        TRB Tutor is a mobile + web application built especially for students preparing for the Tamil Nadu Teacher Recruitment Board (PG TRB) exams. Designed for tier-3 and rural districts, it connects institutions, tutors, and students under one platform to practice subject-wise MCQ testszes and track performance.
+                    </p>
+                    <div class="bg-tn-blue text-white p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3">✅ Built with Tamil Nadu TRB syllabus in mind</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i> Updated curriculum</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i> Expert tutors</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-2"></i> Rural-friendly design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-blue-100 to-orange-100 p-8 rounded-2xl">
+                        <div class="text-8xl mb-4">🎯</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                        <p class="text-gray-600">Empowering rural Tamil Nadu students with quality TRB exam preparation through technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">📚 Subjects We Cover</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-4xl mb-4 text-center">🌿</div>
+                    <h3 class="text-xl font-bold text-center mb-3">TRB Botany</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Topic-wise Unit Tests</li>
+                        <li>• Daily/Weekly MCQ tests</li>
+                        <li>• Answer Review</li>
+                        <li>• Performance Analytics</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-4xl mb-4 text-center">🧪</div>
+                    <h3 class="text-xl font-bold text-center mb-3">TRB Chemistry</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Topic-wise Unit Tests</li>
+                        <li>• Daily/Weekly MCQ tests</li>
+                        <li>• Answer Review</li>
+                        <li>• Performance Analytics</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-4xl mb-4 text-center">🔬</div>
+                    <h3 class="text-xl font-bold text-center mb-3">TRB Zoology</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Topic-wise Unit Tests</li>
+                        <li>• Daily/Weekly MCQ tests</li>
+                        <li>• Answer Review</li>
+                        <li>• Performance Analytics</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-4xl mb-4 text-center">⚛️</div>
+                    <h3 class="text-xl font-bold text-center mb-3">TRB Physics</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Topic-wise Unit Tests</li>
+                        <li>• Daily/Weekly MCQ tests</li>
+                        <li>• Answer Review</li>
+                        <li>• Performance Analytics</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-4xl mb-4 text-center">📐</div>
+                    <h3 class="text-xl font-bold text-center mb-3">TRB Maths</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Topic-wise Unit Tests</li>
+                        <li>• Daily/Weekly MCQ tests</li>
+                        <li>• Answer Review</li>
+                        <li>• Performance Analytics</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-4xl mb-4 text-center">📝</div>
+                    <h3 class="text-xl font-bold text-center mb-3">TRB English</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Topic-wise Unit Tests</li>
+                        <li>• Daily/Weekly MCQ tests</li>
+                        <li>• Answer Review</li>
+                        <li>• Performance Analytics</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-4xl mb-4 text-center">🌍</div>
+                    <h3 class="text-xl font-bold text-center mb-3">General Knowledge</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Topic-wise Unit Tests</li>
+                        <li>• Daily/Weekly MCQ tests</li>
+                        <li>• Answer Review</li>
+                        <li>• Performance Analytics</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-tn-blue to-tn-orange p-6 rounded-xl shadow-lg text-white">
+                    <div class="text-4xl mb-4 text-center">🚀</div>
+                    <h3 class="text-xl font-bold text-center mb-3">More Coming Soon!</h3>
+                    <p class="text-sm text-center">We're constantly adding new subjects based on your needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">🚀 How It Works</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- For Students -->
+                <div class="bg-blue-50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-tn-blue mb-6 text-center">👨‍🎓 For Students</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-tn-blue text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">1</div>
+                            <p class="text-gray-700">Download the app and log in</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-tn-blue text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">2</div>
+                            <p class="text-gray-700">Select preferred subject (e.g., Botany)</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-tn-blue text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">3</div>
+                            <p class="text-gray-700">Access topic-wise MCQ tests updated by subject tutors</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-tn-blue text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">4</div>
+                            <p class="text-gray-700">Attempt daily/weekly/monthly tests</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-tn-blue text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">5</div>
+                            <p class="text-gray-700">Track scores, progress, and performance analytics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- For Tutors -->
+                <div class="bg-green-50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-tn-green mb-6 text-center">👨‍🏫 For Tutors</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="font-semibold text-gray-800 mb-2">Subject-specific admin panels</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Upload MCQ tests and questions</li>
+                                <li>• Add detailed explanations</li>
+                                <li>• Upload images and formulas</li>
+                                <li>• Schedule tests</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- For Institutions -->
+                <div class="bg-orange-50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-tn-orange mb-6 text-center">🏫 For Institutions</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="font-semibold text-gray-800 mb-2">Custom panels to manage</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Add and manage students</li>
+                                <li>• Monitor student performance</li>
+                                <li>• View detailed reports</li>
+                                <li>• Analytics dashboard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">🛠 Admin Control – Tutor & Institution Friendly</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Root Admin Panel -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="text-5xl mb-4">⚙️</div>
+                        <h3 class="text-2xl font-bold text-gray-800">Root Admin Panel</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>Create/manage subject panels</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>Assign tutors to subjects</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>View usage & MCQ tests performance</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>System-wide analytics</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Subject Panel -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="text-5xl mb-4">📚</div>
+                        <h3 class="text-2xl font-bold text-gray-800">Subject Panel</h3>
+                        <p class="text-sm text-gray-600">(e.g., Botany Panel)</p>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-blue-500"></i>
+                            <span>Add/edit MCQ testszes and questions</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-blue-500"></i>
+                            <span>Upload images, formulas</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-blue-500"></i>
+                            <span>Schedule tests (daily/weekly/monthly)</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-blue-500"></i>
+                            <span>Performance tracking</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Institution Dashboard -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="text-5xl mb-4">🏫</div>
+                        <h3 class="text-2xl font-bold text-gray-800">Institution Dashboard</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Add and manage students</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Monitor student performance</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>View reports and analytics</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Progress tracking</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">💡 Why Rural Institutions Trust Us?</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold mb-3">Simple UI for rural students</h3>
+                    <p class="text-gray-600">Designed with simplicity in mind for easy navigation</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">📶</div>
+                    <h3 class="text-xl font-bold mb-3">Low-data, mobile-optimized app</h3>
+                    <p class="text-gray-600">Works efficiently even with slow internet connections</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">🇮🇳</div>
+                    <h3 class="text-xl font-bold mb-3">Tamil-friendly interface</h3>
+                    <p class="text-gray-600">Local language support for better understanding</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">👨‍🏫</div>
+                    <h3 class="text-xl font-bold mb-3">Subject experts from South Tamil Nadu</h3>
+                    <p class="text-gray-600">Local tutors who understand the regional context</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-3">Affordable SaaS pricing</h3>
+                    <p class="text-gray-600">Budget-friendly plans for rural institutions</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">📴</div>
+                    <h3 class="text-xl font-bold mb-3">Offline access (optional feature)</h3>
+                    <p class="text-gray-600">Study even without internet connectivity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Focus Area Section -->
+<section class="py-16 bg-gradient-to-r from-tn-blue to-tn-green text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">📍 Empowering Learners Across Tamil Nadu</h2>
+        <p class="text-xl md:text-2xl mb-8 max-w-4xl mx-auto">
+            From remote villages to bustling towns, our app brings high-quality TRB coaching to every corner of Tamil Nadu – bridging the digital divide in education.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                <div class="text-2xl mb-2">🏫</div>
+                <p class="font-semibold">Schools & Colleges</p>
+            </div>
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                <div class="text-2xl mb-2">📡</div>
+                <p class="font-semibold">Remote Areas</p>
+            </div>
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                <div class="text-2xl mb-2">📱</div>
+                <p class="font-semibold">Mobile Learning</p>
+            </div>
+            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                <div class="text-2xl mb-2">👨‍🏫</div>
+                <p class="font-semibold">Coaching Centres</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">📲 Ready to Try TRB Tutor?</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Get Started Today!</h3>
+                        <div class="space-y-4">
+                            <button class="w-full bg-tn-orange text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-green-600 transition duration-300">
+                                📥 Download the App
+                            </button>
+                            <button class="w-full bg-tn-blue text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300">
+                                🎥 Request Free Demo
+                            </button>
+                            <button class="w-full bg-tn-green text-white py-4 px-6 rounded-lg text-lg font-semibold hover:bg-green-700 transition duration-300">
+                                📞 Contact Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+  <div class="bg-white p-8 rounded-2xl shadow-lg">
+    <h3 class="text-2xl font-bold mb-6">Contact Details</h3>
+    <div class="space-y-4">
+      <div class="flex items-center space-x-3">
+        <i class="fas fa-phone text-tn-blue text-xl"></i>
+        <div>
+          <p class="font-semibold">Phone</p>
+          <p class="text-gray-600">+91-8148153414</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-3">
+        <i class="fas fa-envelope text-tn-blue text-xl"></i>
+        <div>
+          <p class="font-semibold">Email</p>
+          <p class="text-gray-600">info.adhiyanacademy@gmail.com</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-3">
+        <i class="fab fa-whatsapp text-green-500 text-xl"></i>
+        <div>
+          <p class="font-semibold">WhatsApp</p>
+          <p class="text-gray-600">+91-8148153414</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Institution Sign-up Form -->
+    <div class="mt-8 pt-8 border-t">
+      <h4 class="text-lg font-bold mb-4">Institution Sign-up</h4>
+      <form class="space-y-4" id="institutionForm">
+        <input type="text" id="instName" placeholder="Institution Name"
+          class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-tn-blue focus:border-transparent" required />
+        <input type="email" id="email" placeholder="Email Address"
+          class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-tn-blue focus:border-transparent" required />
+        <input type="tel" id="phone" placeholder="Phone Number"
+          class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-tn-blue focus:border-transparent" required />
+        <select id="district"
+          class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-tn-blue focus:border-transparent" required>
+          <option value="">Select District</option>
+          <option value="Ariyalur">Ariyalur</option>
+          <option value="Chengalpattu">Chengalpattu</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Coimbatore">Coimbatore</option>
+          <option value="Cuddalore">Cuddalore</option>
+          <option value="Dharmapuri">Dharmapuri</option>
+          <option value="Dindigul">Dindigul</option>
+          <option value="Erode">Erode</option>
+          <option value="Kallakurichi">Kallakurichi</option>
+          <option value="Kancheepuram">Kancheepuram</option>
+          <option value="Karur">Karur</option>
+          <option value="Krishnagiri">Krishnagiri</option>
+          <option value="Madurai">Madurai</option>
+          <option value="Mayiladuthurai">Mayiladuthurai</option>
+          <option value="Nagapattinam">Nagapattinam</option>
+          <option value="Namakkal">Namakkal</option>
+          <option value="Nilgiris">Nilgiris</option>
+          <option value="Perambalur">Perambalur</option>
+          <option value="Pudukkottai">Pudukkottai</option>
+          <option value="Ramanathapuram">Ramanathapuram</option>
+          <option value="Ranipet">Ranipet</option>
+          <option value="Salem">Salem</option>
+          <option value="Sivaganga">Sivaganga</option>
+          <option value="Tenkasi">Tenkasi</option>
+          <option value="Thanjavur">Thanjavur</option>
+          <option value="Theni">Theni</option>
+          <option value="Thoothukudi">Thoothukudi</option>
+          <option value="Tiruchirappalli">Tiruchirappalli</option>
+          <option value="Tirunelveli">Tirunelveli</option>
+          <option value="Tirupathur">Tirupathur</option>
+          <option value="Tiruppur">Tiruppur</option>
+          <option value="Tiruvallur">Tiruvallur</option>
+          <option value="Tiruvannamalai">Tiruvannamalai</option>
+          <option value="Tiruvarur">Tiruvarur</option>
+          <option value="Vellore">Vellore</option>
+          <option value="Viluppuram">Viluppuram</option>
+          <option value="Virudhunagar">Virudhunagar</option>
+        </select>
+        <button type="submit"
+          class="w-full bg-tn-orange text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-600 transition duration-300">
+          Request Demo
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">🎓 TRB Tutor</h3>
+                    <p class="text-gray-400">Empowering rural Tamil Nadu students with quality TRB exam preparation through technology.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#hero" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="#courses" class="text-gray-400 hover:text-white transition duration-300">Courses</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Subjects</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-gray-400">Botany</span></li>
+                        <li><span class="text-gray-400">Chemistry</span></li>
+                        <li><span class="text-gray-400">Zoology</span></li>
+                        <li><span class="text-gray-400">Physics</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">📧 info.adhiyanacademy@gmail.com</li>
+                        <li class="text-gray-400">📞 +91-8148153414</li>
+                        <li class="text-gray-400">💬 WhatsApp Support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Adhiyan AcademyTRB Tutor App. All rights reserved. Made with ❤️ for Tamil Nadu students.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-6 right-6 bg-tn-blue text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Scroll to top button
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopButton.classList.remove('hidden');
+            } else {
+                scrollToTopButton.classList.add('hidden');
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission
+        document.getElementById('institutionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your interest! We will contact you soon.');
+            this.reset();
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Initialize first section as visible
+        document.querySelector('#hero').style.opacity = '1';
+        document.querySelector('#hero').style.transform = 'translateY(0)';
+    </script>
+    <!-- JS: WhatsApp Form Redirect -->
+<script>
+  document.getElementById("institutionForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("instName").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const district = document.getElementById("district").value;
+
+    const message = `Hello, I would like to request a demo for my institution.\n\nInstitution Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nDistrict: ${district}`;
+    const encodedMsg = encodeURIComponent(message);
+
+    window.open(`https://wa.me/918148153414?text=${encodedMsg}`, "_blank");
+  });
+</script>
+</body>
+</html>
